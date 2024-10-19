@@ -13,7 +13,6 @@ app.use(cors());
 app.use("/api/rules", ruleRoutes);
 
 const PORT = process.env.PORT || 5000;
-
 const connectDB = async () => {
   try {
     await mongoose.connect(process.env.DATABASE_URL, {

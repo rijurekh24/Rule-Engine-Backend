@@ -90,7 +90,22 @@ export const combine_rules_api = async (req, res) => {
     }
 
     const combinedAST = combine_rules(fetchedRules);
-    res.json({ combinedAST });
+
+    const combinedRuleString = fetchedRules
+      .map((rule) => rule.ruleString)
+      .join(" OR ");
+    const newRule = new Rule({
+      ruleString: combinedRuleString,
+      ast: combinedAST,
+    });
+
+    await newRule.save();
+
+    res.status(201).json({
+      success: true,
+      message: "Combined rule created successfully!",
+      combinedRule: newRule,
+    });
   } catch (error) {
     console.error("Error combining rules:", error);
     res.status(500).json({ message: "Server error", error: error.message });
