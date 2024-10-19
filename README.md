@@ -43,4 +43,11 @@ This is the backend service for a rule engine application that uses an Abstract 
    ```
    npm start
    ```
-
+5. **Access the API**:
+   ```http://localhost:5000/api/rules/getallrules```       ```https://rule-engine-backend-3883.onrender.com/api/rules/getallrules```
+   ```http://localhost:5000/api/rules/update/${id}```      ```https://rule-engine-backend-3883.onrender.com/api/rules/update/${id}```
+   ```http://localhost:5000/api/rules/delete/${id```       ```https://rule-engine-backend-3883.onrender.com/api/rules/delete/${id}```
+   ```http://localhost:5000/api/rules/combine```           ```https://rule-engine-backend-3883.onrender.com/api/rules/combine```
+   ```http://localhost:5000/api/rules/evaluate```          ```https://rule-engine-backend-3883.onrender.com/api/rules/evaluate```
+   ```http://localhost:5000/api/rules/create```          ```https://rule-engine-backend-3883.onrender.com/api/rules/create```
+   
