@@ -44,10 +44,58 @@ This is the backend service for a rule engine application that uses an Abstract 
    npm start
    ```
 5. **Access the API**:
-   ```http://localhost:5000/api/rules/getallrules```       ```https://rule-engine-backend-3883.onrender.com/api/rules/getallrules```
-   ```http://localhost:5000/api/rules/update/${id}```      ```https://rule-engine-backend-3883.onrender.com/api/rules/update/${id}```
-   ```http://localhost:5000/api/rules/delete/${id```       ```https://rule-engine-backend-3883.onrender.com/api/rules/delete/${id}```
-   ```http://localhost:5000/api/rules/combine```           ```https://rule-engine-backend-3883.onrender.com/api/rules/combine```
-   ```http://localhost:5000/api/rules/evaluate```          ```https://rule-engine-backend-3883.onrender.com/api/rules/evaluate```
-   ```http://localhost:5000/api/rules/create```          ```https://rule-engine-backend-3883.onrender.com/api/rules/create```
+   ## API Endpoints
+
+### Development URLs
+- **Get All Rules**: 
+  - `http://localhost:5000/api/rules/getallrules`
+  - Retrieves all the rules from the database.
+
+- **Create Rule**: 
+  - `http://localhost:5000/api/rules/create`
+  - Creates a new rule based on the provided rule string.
+
+- **Update Rule**: 
+  - `http://localhost:5000/api/rules/update/:id`
+  - Updates the rule with the specified ID.
+
+- **Delete Rule**: 
+  - `http://localhost:5000/api/rules/delete/:id`
+  - Deletes the rule with the specified ID.
+
+- **Combine Rules**: 
+  - `http://localhost:5000/api/rules/combine`
+  - Combines multiple rules into one new rule.
+
+- **Evaluate Rule**: 
+  - `http://localhost:5000/api/rules/evaluate`
+  - Evaluates a specified rule against given data.
+
+---
+
+### Production URLs
+- **Get All Rules**: 
+  - `https://rule-engine-backend-3883.onrender.com/api/rules/getallrules`
+  - Retrieves all the rules from the database.
+
+- **Create Rule**: 
+  - `https://rule-engine-backend-3883.onrender.com/api/rules/create`
+  - Creates a new rule based on the provided rule string.
+
+- **Update Rule**: 
+  - `https://rule-engine-backend-3883.onrender.com/api/rules/update/:id`
+  - Updates the rule with the specified ID.
+
+- **Delete Rule**: 
+  - `https://rule-engine-backend-3883.onrender.com/api/rules/delete/:id`
+  - Deletes the rule with the specified ID.
+
+- **Combine Rules**: 
+  - `https://rule-engine-backend-3883.onrender.com/api/rules/combine`
+  - Combines multiple rules into one new rule.
+
+- **Evaluate Rule**: 
+  - `https://rule-engine-backend-3883.onrender.com/api/rules/evaluate`
+  - Evaluates a specified rule against given data.
+
    
